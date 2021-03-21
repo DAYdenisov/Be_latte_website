@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.content-outer-wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content-inner-wrapper{
+    max-width: 1270px;
+}
+
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.main-poster{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    background: url("img/coffee-shop.png") no-repeat;
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: relative;
+}
+
+.navigation:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 2;
+}
+
+.navigation-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    z-index: 3;
+}
+
+.navigation-item{
+    margin: 0 21px;
+    font-family: Playfair Display, Arial;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+.navigation-item:hover{
+    color: #f5d76e;
+}
+
+.logo{
+    margin: 0 38px;
+    position: relative;
+    bottom: -20px;
+}
+
+.poster-info{
+    display: flex;
+    flex-direction: column;
+    margin: auto 0 auto 169px;
+    width: 444px;
+}
+
+.poster-info > h1{
+    font-family: Playfair Display, Arial;
+    font-weight: bold;
+    font-style: normal;
+    color: #f5d76e;
+    font-size: 36pt;
+    margin: 0;
+    padding: 0;
+}
+
+.poster-info > p{
+    font-family: Lato, Arial;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 16pt;
+    margin: 0;
+    padding: 0;
+}
+
+.poster-info > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Lato, Arial;
+    font-weight: 900;
+    font-style: normal;
+    color: #ffffff;
+    margin-top: 40px;
+    font-size: 13pt;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FFFFFF;
+    background-color: rgba(57, 49, 47, 0);
+    width: 185px;
+    height: 54px;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Bold.eot');
+    src: url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+    url('fonts/PlayfairDisplay-Bold.woff') format('woff'),
+    url('fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Medium.eot');
+    src: url('fonts/PlayfairDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/PlayfairDisplay-Medium.woff2') format('woff2'),
+    url('fonts/PlayfairDisplay-Medium.woff') format('woff'),
+    url('fonts/PlayfairDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-Regular.eot');
+    src: url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('fonts/PlayfairDisplay-Regular.woff') format('woff'),
+    url('fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Medium.eot');
+    src: url('fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Lato-Medium.woff2') format('woff2'),
+    url('fonts/Lato-Medium.woff') format('woff'),
+    url('fonts/Lato-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Heavy.eot');
+    src: url('fonts/Lato-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Lato-Heavy.woff2') format('woff2'),
+    url('fonts/Lato-Heavy.woff') format('woff'),
+    url('fonts/Lato-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
