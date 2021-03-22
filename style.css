@@ -63,12 +63,16 @@ body{
 
 .navigation-item{
     margin: 0 21px;
+    cursor: pointer;
+}
+
+.navigation-item > a{
+    text-decoration: none;
     font-family: Playfair Display, Arial;
     font-weight: bold;
     font-style: normal;
     color: #ffffff;
     font-size: 16px;
-    cursor: pointer;
 }
 
 .navigation-item:hover{
