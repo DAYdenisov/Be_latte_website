@@ -6,33 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Be Latte</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
 </head>
 <body>
     <div class="main-wrapper content-outer-wrapper">
-        <section class="main-poster content-inner-wrapper">
+        <section class="poster-section content-inner-wrapper">
             <nav class="navigation">
-                <ul class="navigation-list">
-                    <li class="navigation-item">Home</li>
-                    <li class="navigation-item">About us</li>
+                <div class="navigation-list">
                     <img class="logo" src="img/logo.png" alt="логотип кофейни">
-                    <li class="navigation-item">Menu</li>
-                    <li class="navigation-item">Blog</li>
-                    <li class="navigation-item">Contact</li>
-                </ul>
+                    <div class="navigation-item">Home</div>
+                    <div class="navigation-item">About us</div>
+                    <div class="navigation-item">Menu</div>
+                    <div class="navigation-item">Blog</div>
+                    <div class="navigation-item">Contact</div>
+                    <div class="menu-burger-container">
+                        <div class="burger-btn"></div>
+                        <ul class="menu_box">
+                            <li><a class="menu_item" href="#">Home</a></li>
+                            <li><a class="menu_item" href="#">About us</a></li>
+                            <li><a class="menu_item" href="#">Menu</a></li>
+                            <li><a class="menu_item" href="#">Blog</a></li>
+                            <li><a class="menu_item" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <div class="poster-info">
-                <h1>Welcome to Be Latte</h1>
+                <h1 class="greeting">Welcome to Be Latte</h1>
                 <p>Enjoy of a fresh new approach to coffee. Proin gravida nibh vel velit.
                     Auctor aliquet sollicitudin lorem quis.</p>
-                <a href="#">see menu</a>
+                <a class="white-btn" href="#">see menu</a>
             </div>
         </section>
-        <section class="about content-inner-wrapper">
-            <h2>Coffee never tasted so good!</h2>
+        <section class="about-section content-inner-wrapper">
+            <h2 class="caffe-motto">Coffee never tasted <b>so good!</b></h2>
             <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
                 Sed non  mauris vitae erat consequat auctor eu in elit.
                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <img class="cup-img" src="img/coffee-icon.png" alt="значок кружки кофе">
+        </section>
+        <section class="menu-section content-inner-wrapper">
+            <h2 class="menu-section-name">menu</h2>
+            <div class="menu-list">
+                <div class="menu-item">
+                    <div class="coffee-bg"><h3 class="menu-header">coffee</h3></div>
+                    <ul class="price-list">
+                        <li><p class="item-name">Latte</p><p class="item-price">$3.00</p></li>
+                        <li><p class="item-name">Mocha</p><p class="item-price">$3.25</p></li>
+                        <li><p class="item-name">Expresso</p><p class="item-price">$3.75</p></li>
+                        <li><p class="item-name">Capuccino</p><p class="item-price">$3.00</p></li>
+                    </ul>
+                </div>
+                <div class="menu-item">
+                    <div class="tea-bg"><h3 class="menu-header">tea</h3></div>
+                    <ul class="price-list">
+                        <li><p class="item-name">Iced tea</p><p class="item-price">$2.75</p></li>
+                        <li><p class="item-name">Cold brew</p><p class="item-price">$3.25</p></li>
+                        <li><p class="item-name">Jasmine green</p><p class="item-price">$3.75</p></li>
+                        <li><p class="item-name">Peppermint Herbal</p><p class="item-price">$3.00</p></li>
+                    </ul>
+                </div>
+                <div class="menu-item">
+                    <div class="deserts-bg"><h3 class="menu-header">deserts</h3></div>
+                    <ul class="price-list">
+                        <li><p class="item-name">Tiramisu</p><p class="item-price">$3.00</p></li>
+                        <li><p class="item-name">Cheese cake</p><p class="item-price">$3.25</p></li>
+                        <li><p class="item-name">Black forest</p><p class="item-price">$3.75</p></li>
+                        <li><p class="item-name">Brownie</p><p class="item-price">$3.00</p></li>
+                    </ul>
+                </div>
+            </div>
+            <img class="cup-img" src="img/coffee-icon.png" alt="значок кружки кофе">
+        </section>
+        <section class="personalize-coffee-section content-inner-wrapper">
+            <h2 class="personalize-section-name">Your Personalized Coffee</h2>
+            <div class="swiper-container slider-container">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide">
+                        <img class="product-img" src="img/coffe-bag1.png" alt="">
+                        <p class="product-name">Mocha Late</p>
+                        <p class="product-description">Coffee is a brewed drink prepared
+                            from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
+                        <p class="product-price">$30 per package</p>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <img class="product-img" src="img/coffe-bag2.png" alt="">
+                        <p class="product-name">Iced Coffee</p>
+                        <p class="product-description">Coffee is a brewed drink prepared
+                            from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
+                        <p class="product-price">$30 per package</p>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <img class="product-img" src="img/coffe-bag3.png" alt="">
+                        <p class="product-name">Caramel Frappe</p>
+                        <p class="product-description">Coffee is a brewed drink prepared
+                            from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
+                        <p class="product-price">$30 per package</p>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <img class="product-img" src="img/coffe-bag4.png" alt="">
+                        <p class="product-name">Double Espresso</p>
+                        <p class="product-description">Coffee is a brewed drink prepared
+                            from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
+                        <p class="product-price">$30 per package</p>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <img class="cup-img" src="img/coffee-icon.png" alt="значок кружки кофе">
+        </section>
+        <section class="location-section content-inner-wrapper">
+            <h2 class="location-name-section">Location</h2>
+            <div class="location-row">
+                <div class="location-info">
+                    <h4>Location</h4>
+                    <p>Visit us at Don State Technical University, Rostov-on-Don, Gagarina 1</p>
+                    <h4>Hours</h4>
+                    <p>Mon - Sat:  7am - 8pm</p>
+                    <p>Sunday:  7am - 5pm</p>
+                    <h4>happy hour</h4>
+                    <p>Mon - Fri:  4pm - 6pm</p>
+                </div>
+                <div class="location-map">
+                    <a href="https://yandex.ru/maps/?um=constructor%3Aef2fb4fd7094a2f50e8d16ddb3e0841672e9e25d457fc12ecda70d88f8c08ee5&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Aef2fb4fd7094a2f50e8d16ddb3e0841672e9e25d457fc12ecda70d88f8c08ee5&amp;width=320&amp;height=450&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
+                </div>
+            </div>
         </section>
     </div>
+    <footer class="content-outer-wrapper">
+        <div class="footer-information">
+            <div class="social-sites">
+                <a href="https://ru-ru.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/?lang=ru"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="address">Don State Technical University, Rostov-on-Don, Gagarina 1</p>
+            <p class="copyrighting">© 2021 Be Latte, all right reserved</p>
+        </div>
+    </footer>
+    <script src="script/swiper-bundle.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
